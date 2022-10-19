@@ -1,0 +1,15 @@
+#signup{
+    background: linear-gradient(to right, #222121,rgb(246, 177, 246) 100%);
+    box-sizing: content-box;
+    width: auto;
+    border:solid #5B6DCd 10 px;
+    padding: 5px;
+
+   }
+   label { display:block }
+
+   #signup a {
+
+    font-weight: 1000;
+    color:whitesmoke;
+   }

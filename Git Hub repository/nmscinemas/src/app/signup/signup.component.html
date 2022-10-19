@@ -1,0 +1,23 @@
+<section id="signup">
+<div>
+    <h2>REGISTER</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="signUp()">
+        <label><a>EMAILID</a><br/></label>
+        <input type="email" formControlName="emailid"/><br/><br/>
+        <label><a>USERNAME</a></label>
+        <input type="username" formControlName="username"/><br/><br/>
+        <label><a>PASSWORD</a></label>
+        <input type="password" formControlName="password"/><br/><br/>
+        <label><a>LOCATION</a></label>
+        <input type="location" formControlName="location"/><br/><br/>
+        <label><a>TYPEOFUSER </a></label><br/>
+        <input type="radio" name="typeOfUser"value="admin" formControlName="typeOfUser"/><a>ADMIN </a>
+        <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/><a>USER</a><br/>
+        <input type="submit" value="signUp"style=" margin-right: 20px;"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span><br/>
+    <a routerLink="/login"><a>LOGIN</a></a>
+</div>
+</section>

@@ -1,0 +1,12 @@
+#text a{
+    color: rgb(5, 7, 8);
+    font-size: 20px;
+    letter-spacing: 2px;
+font-weight: 500;   
+}
+
+
+
+#text{
+    background: linear-gradient(to right, #222121,rgb(246, 177, 246) 100%);
+}

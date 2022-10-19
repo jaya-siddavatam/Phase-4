@@ -1,0 +1,24 @@
+<section id="login">
+<div>
+    <h2><a>LOGIN</a></h2><br/>
+    <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+        <label><a>EMAILID</a> </label>&ensp;
+        <input type="email" formControlName="emailid"/><br/>
+
+        
+        <label><a>PASSWORD</a></label>
+        <input type="password" formControlName="password"/><br/>
+       
+        <label><a>TYPEOFUSER</a></label><br/>
+        <input  type="radio"  name="typeOfUser" value="admin" formControlName="typeOfUser" /><a>ADMIN</a>
+        <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/><a>USER</a><br/>
+        <input type="submit" value="signIn"style=" margin-right: 20px;"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span><br/>
+    <a routerLink="/signUp" style=" margin-right: 30px;">SIGNUP</a> 
+    <a routerLink="/updatepwd"  style=" margin-right: 30px;">FORGOT PASSWORD</a>
+    <a routerLink="/updateprofile"  style=" margin-right: 30px;">USER UPDATE</a>
+</div>
+</section>

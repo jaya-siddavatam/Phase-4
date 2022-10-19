@@ -1,0 +1,23 @@
+<section id="update">
+<div>
+    <h2>USER UPDATE</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="updateprofile()">
+        <label><a>EMAILID</a></label>
+        <input type="email" formControlName="emailid"/><br/>
+        <label><a>USERNAME</a></label>
+        <input type="username" formControlName="username"/><br/>
+        <label><a>PASSWORD</a></label>
+        <input type="password" formControlName="password"/><br/>
+        <label><a>LOCATION</a></label>
+        <input type="location" formControlName="location"/><br/>
+        <label><a>TYPE OF USER</a></label>
+        <input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser"/><a>ADMIN</a>
+        <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/><a>USER</a><br/>
+        <input type="submit" value="updateprofile"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span><br/>
+    <a routerLink="/login"><a>LOGIN</a></a>
+</div>
+</section>

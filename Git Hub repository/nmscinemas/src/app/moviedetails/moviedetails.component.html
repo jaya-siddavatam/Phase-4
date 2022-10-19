@@ -1,0 +1,73 @@
+<body>
+    <div class="center">
+      <h1>MOVIE DETAILS</h1>
+      <form [ formsGroup ]="applyForm" (ngSubmit)="Apply()">
+        <div class="txt_field">
+          <input
+            type="text"
+            class="form-control"
+            formControlName="description"
+            id="description"
+            placeholder="Description"
+          />
+          <span></span>
+          <label for="exampleInputPassword1" class="form-label"></label>
+        </div>
+  
+        <div class="txt_field">
+          <input
+            type="text"
+            class="form-control"
+            formControlName="ticket_price"
+            id="Ticket_price"
+            placeholder="ex:1000"
+          />
+          <span></span>
+          <label for="exampleInputPassword1" class="form-label"></label>
+        </div>
+  
+        <div class="txt_field">
+          <input
+            type="text"
+            class="form-control"
+            formControlName="language"
+            id="language"
+            placeholder="language"
+          />
+          <span></span>
+          <label for="exampleInputPassword1" class="form-label"></label>
+        </div>
+  
+        <div class="txt_field">
+          <input
+            type="text"
+            class="form-control"
+            formControlName="movieName"
+            id="movieName"
+            placeholder="PS_1,etc"
+          />
+          <span></span>
+          <label for="exampleInputPassword1" class="form-label"></label>
+        </div>
+       
+  
+        <div class="txt_field">
+          <input
+            type="text"
+            class="form-control"
+            formControlName="show_timing"
+            id="show_timing"
+            placeholder="eg:12.00am,3.00pm"
+          />
+          <span></span>
+          <label for="exampleInputPassword1" class="form-label"></label>
+        </div>
+  
+        <input type="submit" name="register" (Click)=Apply() value="Apply" />
+        <div class="signup_link">
+          Go Back<a routerLink="/home"> Click to here</a>
+        </div>
+      </form>
+    </div>
+  </body>
+  
