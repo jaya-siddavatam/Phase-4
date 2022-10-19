@@ -22,7 +22,7 @@ const routes: Routes = [
   {path:"signUp",component:SignupComponent},
   {path:"home",component:AdminHomeComponent},
   {path:"view",component:ViewMoviedetailsComponent},
-  {path:"apply",component:MoviedetailsComponent}
+  {path:"apply",component:MoviedetailsComponent},
 
 ];
 

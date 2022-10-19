@@ -1,0 +1,85 @@
+<!-- <div>
+    <form [formGroup] = "movieRef" (ngSubmit)="findmoviebyname()">
+        <input type="text"placeholder="Search movie"formControlName="moviename" /> <br>
+        <button>Submit</button>
+        <ul>
+            <li *ngFor="let movies of movielistbyname">{{movies}}</li>
+          </ul>
+    
+          <table border="1" *ngFor="let movie of movielistbyname">
+            <tr>
+                <th>description</th>
+                <th>Movie Name</th>
+                <th>Show Timings</th>
+                <th>Language</th>
+                <th>Ticket Price</th>
+            </tr>
+            <tr>
+                <td>{{movie.Description}}</td>
+                <td>{{movie.movieName}}</td>
+                <td>{{movie.show_timing}}</td>
+                <td>{{movie.language}}</td>
+                <td>{{movie.Ticket_price}}</td>
+            </tr>
+        </table>
+    </form>
+</div> -->
+
+<!-- <div>
+    <form (ngSubmit)="updateDataFromDb()">
+        <label>Genre</label>
+        <input type="text" name="Description" [(ngModel)]="Description"/><br/>
+        <label>Movie Name</label>
+        <input type="text" name="movieName" [(ngModel)]="movieName"/><br/>
+        <label>show timing</label>
+        <input type="text" name="show_timing" [(ngModel)]="show_timing"/><br/>
+        <label>Language</label>
+        <input type="text" name="language" [(ngModel)]="language" >
+        <input type="submit" value="BookNow"/>
+        <input type="reset" value="reset"/>
+    </form>
+</div> -->
+
+<div>
+    <h2>Movie Details</h2>
+    <!-- we have to import reactive forms module -->
+    <!-- we no need to pass the object in event property -->
+    <form [formGroup]="loginref" (ngSubmit)="user()">
+        <label >Movie Name</label>
+        <!-- here we did not require required keyword here -->
+        <input type="text" formControlName="email" readonly><br>
+        <div *ngIf="loginref.controls['email'].invalid && loginref.controls['email'].touched">
+        </div>
+        <label >Genre </label>
+        <input type="text" formControlName ="pass" readonly><br>
+        <div *ngIf="loginref.controls['pass'].invalid && loginref.controls['pass'].touched">
+        </div>
+        <label >Show Timings </label>
+        <input type="text" formControlName ="show_timing" readonly><br>
+        <div *ngIf="loginref.controls['show_timing'].invalid">
+        </div>
+
+        <label >Language </label>
+        <input type="text" formControlName ="language" readonly><br>
+        <div *ngIf="loginref.controls['language'].invalid">
+        </div>
+
+        <label >Ticket Cost </label>
+        <input type="number" formControlName ="cost" readonly><br>
+        <div *ngIf="loginref.controls['cost'].invalid">
+        </div>
+
+        <label >Number Of Tickets </label>
+        <input type="number" formControlName ="tickets"><br>
+        <div *ngIf="loginref.controls['tickets'].invalid">
+        </div>
+
+        <input type="submit" value="submit" [disabled]="loginref.invalid">
+        <input type="reset" value="reset">
+    </form><br>
+</div>
+
+<!-- <p>The total price of your bill is <b>${{totalPrice}}</b> </p> -->
+
+
+

@@ -1,7 +1,8 @@
+
 <body>
     <div class="center">
       <h1>MOVIE DETAILS</h1>
-      <form [ formsGroup ]="applyForm" (ngSubmit)="Apply()">
+      <form [formGroup]="applyForm" (ngSubmit)="Apply()">
         <div class="txt_field">
           <input
             type="text"

@@ -1,7 +1,7 @@
 <body>
     <div class="conatainer">
       <nav class="navbar">
-        <h1 style="color: rgb(1, 9, 17)"><b>AdharCard Section</b></h1>
+        <h1 style="color: rgb(1, 9, 17)"><b>Movie Details</b></h1>
         <div class="d-flex">
           <a routerLink="/login" type="button" class="btn btn-danger mx-2">
             Logout
@@ -16,18 +16,19 @@
           <th scope="col">id</th>
           <th scope="col">Description</th>
           <th scope="col">Ticket price</th>
-          <th scope="col">Movie name</th>
           <th scope="col">language</th>
+          <th scope="col">Movie name</th>
           <th scope="col">Show timing</th>
-       
+          <th scope="col">Delete Movie</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let row of MovieData">
+          <td>{{row.id}}</td>
           <td>{{ row.description }}</td>
           <td>{{ row.ticket_price }}</td>
           <td>{{ row.language }}</td>
-          <td>{{ row.movie_name }}</td>
+          <td>{{ row.movieName }}</td>
           <td>{{ row.show_timing }}</td>
       
           <td>

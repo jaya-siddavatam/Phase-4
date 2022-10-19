@@ -10,7 +10,7 @@ import { ReactiveFormsModule} from "@angular/forms";
   styleUrls: ['./moviedetails.component.css']
 })
 export class MoviedetailsComponent implements OnInit {
-  public applyForm !: FormGroup
+  public applyForm!: FormGroup;
   constructor(private formBulider : FormBuilder, private http : HttpClient, private router : Router) { }
 
   ngOnInit(): void {
